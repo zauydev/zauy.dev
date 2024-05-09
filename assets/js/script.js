@@ -16,7 +16,12 @@ window.addEventListener('scroll', function() {
         if (scrollable()) {
             triangle.style.opacity = 1;
         } else {
+            triangle.style.cursor = 'unset';
             triangle.style.opacity = 0;
         }
-    }, 150);
+    }, 1500);
 });
+
+triangle.addEventListener('click', function() {
+    window.scrollBy(0, 100); 
+  });
