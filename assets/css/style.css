@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('/assets/fonts/Outfit-VariableFont_wght.ttf');
+}
+
+@keyframes bg-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fade-in-triangle {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes jump-triangle {
+    20% {
+        transform: translateY(0px) translateX(-50%);
+    }
+    50% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+    80% {
+        transform: translateY(0px) translateX(-50%);
+
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(24, 26, 26);
+}
+
+.title-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.title-text {
+    animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 100px;
+    font-family: 'outfit';
+    transform: translate(-50%,-125%);
+    z-index: 2;
+}
+
+.title-text-shadow {
+    z-index: 1;
+    filter: brightness(0.7) blur(20px);
+
+}
+
+.title-rainbow {
+    color: #00000000;
+    background: linear-gradient(to right, 
+    red, violet, indigo, blue, green, yellow, orange,red);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    white-space: nowrap;
+    animation: bg-pan 3s linear infinite;
+}
+
+#scroll-triangle {
+    animation: fade-in-triangle 10s cubic-bezier( 0.56, 0.44, 0.29, 1 ), jump-triangle 4s ease-in-out infinite;
+    transition: 0.8s;
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid gray;
+    transform: translateX(-50%);
+}
