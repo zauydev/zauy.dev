@@ -57,6 +57,7 @@ body {
 }
 
 .title-section::before {
+    margin: 0;
     position: fixed;
     content: 'zauy';
     color: #00000000;
@@ -68,6 +69,8 @@ body {
     white-space: nowrap;
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
+    font-size: 200px;
+
 }
 
 .title-link {
@@ -76,15 +79,12 @@ body {
 
 .title-section {
     animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 100px;
     transition: top 0.5s ease;
 }
 
 .title-text {
-    position: flex;
+    font-size: 200px;
+    position: fixed;
     margin: 0;
     animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
     user-select: none;
