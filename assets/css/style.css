@@ -21,7 +21,6 @@
     }
 }
 
-
 @keyframes fade-in-triangle {
     0% {
         opacity: 0;
@@ -57,41 +56,50 @@ body {
     background-color: rgb(24, 26, 26);
 }
 
-.title-section {
+.title-section::before {
     position: fixed;
-    font-size: 100px; 
-    top: 50%;
-    left: 50%;
+    content: 'zauy';
+    color: #00000000;
+    filter: blur(10px);
+    font-family: 'outfit';
+    background: linear-gradient(to right, 
+    rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
+    background-clip: text;
+    white-space: nowrap;
+    animation: bg-pan 3s linear infinite;
+    background-size: 200%;
+}
+
+.title-link {
+    text-decoration: none;
+}
+
+.title-section {
+    animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 100px;
     transition: top 0.5s ease;
 }
 
-.title-section.fixed-top {
-    top: 0;
-    font-size: 30px;
-}
-
 .title-text {
+    position: flex;
+    margin: 0;
     animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    position: fixed;
     color: white;
     font-family: 'outfit';
     z-index: 2;
 }
 
-.title-text-shadow {
-    z-index: 1;
-    filter: brightness(0.7) blur(20px);
-
-}
-
 .title-rainbow {
     color: #00000000;
     background: linear-gradient(to right, 
-    rgb(255, 45, 45), rgb(241, 159, 241), rgb(131, 65, 179), rgb(85, 85, 241), rgb(85, 241, 85), yellow, orange,rgb(255, 45, 45));
+    rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
     background-size: 200%;
     background-clip: text;
     white-space: nowrap;
