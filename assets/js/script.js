@@ -8,7 +8,7 @@ function scrollable() {
 
     return scrollTop + clientHeight < scrollHeight;
 }
-
+9
 window.addEventListener('scroll', function() {
     clearTimeout(isscrolling);
 
@@ -16,7 +16,6 @@ window.addEventListener('scroll', function() {
         if (scrollable()) {
             triangle.style.opacity = 1;
         } else {
-            triangle.style.cursor = 'unset';
             triangle.style.opacity = 0;
         }
     }, 1500);
@@ -24,4 +23,4 @@ window.addEventListener('scroll', function() {
 
 triangle.addEventListener('click', function() {
     window.scrollBy(0, 100); 
-  });
+});

@@ -30,8 +30,6 @@
         opacity: 0;
     }
     100% {        
-        cursor: pointer;
-
         opacity: 1;
     }
 }
@@ -91,7 +89,7 @@ body {
 .title-rainbow {
     color: #00000000;
     background: linear-gradient(to right, 
-    red, violet, indigo, blue, green, yellow, orange,red);
+    rgb(255, 45, 45), rgb(241, 159, 241), rgb(131, 65, 179), rgb(85, 85, 241), rgb(85, 241, 85), yellow, orange,rgb(255, 45, 45));
     background-size: 200%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
