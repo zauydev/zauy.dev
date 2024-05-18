@@ -1,4 +1,6 @@
 const triangle = document.getElementById('scroll-triangle')
+const triangle_container = document.getElementById('triangle-container')
+
 var isscrolling;
 
 function scrollable() {
@@ -21,6 +23,6 @@ window.addEventListener('scroll', function() {
     }, 1500);
 });
 
-triangle.addEventListener('click', function() {
+triangle_container.addEventListener('click', function() {
     window.scrollBy(0, 100); 
 });

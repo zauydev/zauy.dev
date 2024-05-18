@@ -7,6 +7,7 @@
     from {
         background-position: 0% center;
     }
+
     to {
         background-position: -200% center;
     }
@@ -16,6 +17,7 @@
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -25,10 +27,12 @@
     0% {
         opacity: 0;
     }
+
     70% {
         opacity: 0;
     }
-    100% {        
+
+    100% {
         opacity: 1;
     }
 }
@@ -37,9 +41,11 @@
     20% {
         transform: translateY(0px) translateX(-50%);
     }
+
     50% {
         transform: translateY(-20px) translateX(-50%);
     }
+
     80% {
         transform: translateY(0px) translateX(-50%);
 
@@ -57,19 +63,19 @@ body {
 }
 
 .title-section::before {
-    margin: 0;
+    filter: blur(10px);
     position: fixed;
     content: 'zauy';
     color: #00000000;
-    filter: blur(10px);
     font-family: 'outfit';
-    background: linear-gradient(to right, 
-    rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
+    background: linear-gradient(to right,
+            rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
     background-clip: text;
     white-space: nowrap;
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
     font-size: 200px;
+    font-weight: bold;
 
 }
 
@@ -78,15 +84,14 @@ body {
 }
 
 .title-section {
-    animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
+    animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
     transition: top 0.5s ease;
 }
 
 .title-text {
-    font-size: 200px;
     position: fixed;
-    margin: 0;
-    animation: fade-in 1.98s cubic-bezier( 0.56, 0.44, 0.29, 1 );
+    font-size: 200px;
+    animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -94,28 +99,45 @@ body {
     color: white;
     font-family: 'outfit';
     z-index: 2;
+    margin-top: 0px;
 }
 
 .title-rainbow {
+    position: relative;
     color: #00000000;
-    background: linear-gradient(to right, 
-    rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
+    background: linear-gradient(to right,
+            rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
     background-size: 200%;
     background-clip: text;
     white-space: nowrap;
     animation: bg-pan 3s linear infinite;
+    font-family: 'outfit';
+
 }
 
 #scroll-triangle {
-    animation: fade-in-triangle 10s cubic-bezier( 0.56, 0.44, 0.29, 1 ), jump-triangle 4s ease-in-out infinite;
+    animation: fade-in-triangle 10s cubic-bezier(0.56, 0.44, 0.29, 1), jump-triangle 4s ease-in-out infinite;
     transition: 0.8s;
-    position: fixed;
     left: 50%;
     bottom: 40px;
     width: 0;
     height: 0;
+    position: fixed;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 25px solid gray;
     transform: translateX(-50%);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#triangle-container {
+
+    position: fixed;
+    align-items: center;
+    width: 100vw;
+    height: 120px;
+    bottom: 0;
 }
