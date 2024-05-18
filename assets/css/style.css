@@ -2,49 +2,6 @@
     font-family: 'outfit';
     src: url('/assets/fonts/Outfit-VariableFont_wght.ttf');
 }
-
-@keyframes bg-pan {
-    from {
-        background-position: 0% center;
-    }
-    to {
-        background-position: -200% center;
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in-triangle {
-    0% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes jump-triangle {
-    20% {
-        transform: translateY(0px) translateX(-50%);
-    }
-    50% {
-        transform: translateY(-20px) translateX(-50%);
-    }
-    80% {
-        transform: translateY(0px) translateX(-50%);
-    }
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -62,6 +19,37 @@ body {
     text-decoration: none;
 }
 
+.big-title {
+    font-size: 100px;
+    animation: font-size-inc .5s ease;
+
+}
+
+.small-title {
+    animation: font-size-dec .5s ease;
+    font-size: 50px;
+}
+
+.big-container {
+    height: 100vh;
+    animation: height-inc 0.5s ease;
+}
+
+.small-container {
+    height: 100px;
+    animation: height-dec 0.5s ease;
+}
+
+.big-blur {
+    margin-left: -410.8px;
+    animation: margin-inc .5s ease;
+}
+
+.small-blur {
+    margin-left: -205.9px;
+    animation: margin-dec .5s ease;
+}
+
 .text-container {
     position: fixed;
     display: -webkit-box;
@@ -71,18 +59,20 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
 }
 
 .title-section {
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
-    transition: top 0.5s ease;
+}
+
+#title-section {
+    width: auto;
 }
 
 .title-text {
     position: relative;
-    font-size: 100px;
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
+    transition: all .5s ease-in-out;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -102,12 +92,12 @@ body {
     background-clip: text;
     white-space: nowrap;
     animation: bg-pan 3s linear infinite;
+    animation: all 0.5s ease;
 
 }
 
 .rainbow-blur {
     position: fixed;
-    margin-left: -410px;
     filter: blur(20px);
     color: #00000000;
     background: linear-gradient(to right,
@@ -116,6 +106,10 @@ body {
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
     font-weight: bold;
+}
+
+.small-margin {
+    margin-left: 205.9px;
 }
 
 #scroll-triangle {
@@ -134,6 +128,7 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+    opacity: 0;
 }
 
 #triangle-container {
