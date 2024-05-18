@@ -7,7 +7,6 @@
     from {
         background-position: 0% center;
     }
-
     to {
         background-position: -200% center;
     }
@@ -17,7 +16,6 @@
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -27,11 +25,9 @@
     0% {
         opacity: 0;
     }
-
     70% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -41,14 +37,11 @@
     20% {
         transform: translateY(0px) translateX(-50%);
     }
-
     50% {
         transform: translateY(-20px) translateX(-50%);
     }
-
     80% {
         transform: translateY(0px) translateX(-50%);
-
     }
 }
 
@@ -71,17 +64,14 @@ body {
 
 .text-container {
     position: fixed;
-    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-    display: -ms-flexbox;  /* TWEENER - IE 10 */
-    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100vw;
     height: 100vh;
-
 }
 
 .title-section {
@@ -91,8 +81,6 @@ body {
 
 .title-text {
     position: relative;
-
-
     font-size: 100px;
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
     user-select: none;
@@ -107,8 +95,6 @@ body {
 }
 
 .title-rainbow {
-    font-size: 100px;
-    position: relative;
     color: #00000000;
     background: linear-gradient(to right,
             rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
@@ -116,22 +102,17 @@ body {
     background-clip: text;
     white-space: nowrap;
     animation: bg-pan 3s linear infinite;
-    font-family: 'outfit';
 
 }
 
 .rainbow-blur {
     position: fixed;
     margin-left: -410px;
-
     filter: blur(20px);
-    content: 'zauy';
     color: #00000000;
-    font-family: 'outfit';
     background: linear-gradient(to right,
             rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
     background-clip: text;
-    white-space: nowrap;
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
     font-weight: bold;
