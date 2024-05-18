@@ -124,7 +124,7 @@ body {
     position: fixed;
     margin-left: -410px;
 
-    filter: blur(10px);
+    filter: blur(20px);
     content: 'zauy';
     color: #00000000;
     font-family: 'outfit';
