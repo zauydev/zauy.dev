@@ -57,30 +57,31 @@ html {
 }
 
 body {
-    margin: 0px;
     padding: 0px;
     background-color: rgb(24, 26, 26);
 }
 
-.title-section::before {
-    filter: blur(10px);
-    position: fixed;
-    content: 'zauy';
-    color: #00000000;
-    font-family: 'outfit';
-    background: linear-gradient(to right,
-            rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
-    background-clip: text;
-    white-space: nowrap;
-    animation: bg-pan 3s linear infinite;
-    background-size: 200%;
-    font-size: 200px;
-    font-weight: bold;
-
+.home {
+    height: 100vh;
 }
 
 .title-link {
     text-decoration: none;
+}
+
+.text-container {
+    position: fixed;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
 }
 
 .title-section {
@@ -89,8 +90,10 @@ body {
 }
 
 .title-text {
-    position: fixed;
-    font-size: 200px;
+    position: relative;
+
+
+    font-size: 100px;
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
     user-select: none;
     -webkit-user-select: none;
@@ -100,9 +103,11 @@ body {
     font-family: 'outfit';
     z-index: 2;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 .title-rainbow {
+    font-size: 100px;
     position: relative;
     color: #00000000;
     background: linear-gradient(to right,
@@ -113,6 +118,23 @@ body {
     animation: bg-pan 3s linear infinite;
     font-family: 'outfit';
 
+}
+
+.rainbow-blur {
+    position: fixed;
+    margin-left: -410px;
+
+    filter: blur(10px);
+    content: 'zauy';
+    color: #00000000;
+    font-family: 'outfit';
+    background: linear-gradient(to right,
+            rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
+    background-clip: text;
+    white-space: nowrap;
+    animation: bg-pan 3s linear infinite;
+    background-size: 200%;
+    font-weight: bold;
 }
 
 #scroll-triangle {
