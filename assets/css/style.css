@@ -84,7 +84,7 @@ body {
     animation: fade-in-triangle 10s cubic-bezier(0.56, 0.44, 0.29, 1), jump-triangle 4s ease-in-out infinite;
     transition: 0.8s;
     left: 50%;
-    bottom: 40px;
+    bottom: 80px;
     width: 0;
     height: 0;
     position: fixed;
