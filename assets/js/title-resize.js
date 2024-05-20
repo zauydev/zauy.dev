@@ -1,8 +1,8 @@
-const container             = document.getElementById('text-container');
-const section               = document.getElementById('title-section');
-const text                  = document.getElementById('title-text');
-const blur                  = document.getElementById('rainbow-blur');
-const triangle              = document.getElementById('scroll-triangle');
+const container = document.getElementById('text-container');
+const section = document.getElementById('title-section');
+const text = document.getElementById('title-text');
+const blur = document.getElementById('rainbow-blur');
+const triangle = document.getElementById('scroll-triangle');
 
 function scrollable() {
     var scrollHeight = document.documentElement.scrollHeight;
@@ -18,18 +18,23 @@ function getScrollTop() {
 function checkScroll() {
     var scrollTop = getScrollTop();
 
-    if (scrollTop < document.documentElement.clientHeight/2) {
+    if (scrollTop < document.documentElement.clientHeight / 2.5) {
         console.log('scrollTop');
+
         container.classList.add('big-container');
-        container.classList.remove('small-container'); 
         text.classList.add('big-title');
+
+        container.classList.remove('small-container');
         text.classList.remove('small-title');
     }
-    if  (scrollTop > document.documentElement.clientHeight/2.1) {
+    if (scrollTop > document.documentElement.clientHeight / 2.2) {
         container.classList.add('small-container');
-        container.classList.remove('big-container');    
-        text.classList.remove('big-title');
         text.classList.add('small-title');
+
+        container.classList.remove('big-container');
+        text.classList.remove('big-title');
+
+
     }
 
     if (scrollable()) {
