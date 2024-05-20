@@ -99,12 +99,13 @@ body {
 }
 
 #triangle-container {
+    animation: fade-in .5s ease-in-out;
     position: fixed;
     align-items: center;
     width: 100vw;
     height: 120px;
     bottom: 0;
-    background-image: linear-gradient(rgba(24, 26, 26, 0),  rgb(24, 26, 26));
+    background-image: linear-gradient(rgba(24, 26, 26, 0),rgba(24, 26, 26, 0.884),rgb(24, 26, 26));
 }
 
 .example-text {
