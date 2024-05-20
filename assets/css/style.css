@@ -72,7 +72,7 @@ body {
     filter: blur(20px);
     color: #00000000;
     background: linear-gradient(to right,
-            rgb(241, 159, 241), rgb(131, 65, 179), rgb(241, 159, 241));
+            rgb(241, 159, 241), #8341b3, rgb(241, 159, 241));
     background-clip: text;
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
