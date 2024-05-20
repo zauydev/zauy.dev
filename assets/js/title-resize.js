@@ -18,7 +18,7 @@ function getScrollTop() {
 function checkScroll() {
     var scrollTop = getScrollTop();
 
-    if (scrollTop < 10) {
+    if (scrollTop < 5) {
         console.log('scrollTop');
         container.classList.add('big-container');
         container.classList.remove('small-container'); 
