@@ -16,18 +16,6 @@
     }
 }
 
-@keyframes fade-in-triangle {
-    0% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 @keyframes jump-triangle {
     20% {
         transform: translateY(0px) translateX(-50%);
@@ -50,6 +38,17 @@
     to {height: 100px;}
 }
 
+.small-container {
+    height: 100px;
+    animation: height-dec 0.5s ease;
+}
+
+.big-container {
+    height: 100vh;
+    animation: height-inc 0.5s ease;
+}
+
+
 @keyframes font-size-inc {
     from {font-size: 50px;}
     to {font-size: 100px;}
@@ -60,12 +59,12 @@
     to {font-size: 50px;}
 }
 
-@keyframes margin-inc {
-    from {margin-left: -205.9px;}
-    to {margin-left: -410.7px;}
+.big-title {
+    font-size: 100px;
+    animation: font-size-inc .5s ease;
 }
 
-@keyframes margin-dec {
-    from {margin-left: -410.7px;}
-    to {margin-left: -205.9px;}
+.small-title {
+    animation: font-size-dec .5s ease;
+    font-size: 50px;
 }
