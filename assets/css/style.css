@@ -6,6 +6,7 @@
 html {
     font-family: 'outfit';
     scroll-behavior: smooth;
+    color: white;
 }
 
 body {
@@ -110,3 +111,4 @@ body {
     display: flex;
     justify-content: center;
 }
+

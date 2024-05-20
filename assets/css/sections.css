@@ -1,0 +1,11 @@
+.main {
+    margin: 30px;
+    outline: solid rgb(56, 56, 56);
+    border-radius: 20px;
+    box-shadow: black;
+    padding: 10px 10px 10px 20px;
+}
+
+#socials {
+    width: 300px;
+}

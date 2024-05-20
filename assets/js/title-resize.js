@@ -25,7 +25,7 @@ function checkScroll() {
         text.classList.add('big-title');
         text.classList.remove('small-title');
     }
-    if  (scrollTop > document.documentElement.clientHeight/3) {
+    if  (scrollTop > document.documentElement.clientHeight/2.1) {
         container.classList.add('small-container');
         container.classList.remove('big-container');    
         text.classList.remove('big-title');
