@@ -1,8 +1,8 @@
-const container = document.getElementById("text-container");
-const section   = document.getElementById("title-section");
-const text      = document.getElementById("title-text");
-const blur      = document.getElementById("rainbow-blur");
-const triangle  = document.getElementById('scroll-triangle')
+const container             = document.getElementById('text-container');
+const section               = document.getElementById('title-section');
+const text                  = document.getElementById('title-text');
+const blur                  = document.getElementById('rainbow-blur');
+const triangle              = document.getElementById('scroll-triangle');
 
 function scrollable() {
     var scrollHeight = document.documentElement.scrollHeight;
@@ -18,13 +18,14 @@ function getScrollTop() {
 function checkScroll() {
     var scrollTop = getScrollTop();
 
-    if (scrollTop < 5) {
+    if (scrollTop < 400) {
         console.log('scrollTop');
         container.classList.add('big-container');
         container.classList.remove('small-container'); 
         text.classList.add('big-title');
         text.classList.remove('small-title');
-    } else {
+    }
+    if  (scrollTop > 350) {
         container.classList.add('small-container');
         container.classList.remove('big-container');    
         text.classList.remove('big-title');
@@ -33,9 +34,11 @@ function checkScroll() {
 
     if (scrollable()) {
         triangle.style.opacity = 1;
+        triangle_container.style.height = '120px';
     } else {
         console.log('not top');
         triangle.style.opacity = 0;
+        setTimeout(triangle_container.style.height = '0px', 500);
     }
 }
 

@@ -1,0 +1,21 @@
+h1 {
+    color: white;
+    font-size: xx-large;
+}
+
+h2 {
+    color: white;
+    font-size: large;
+}
+
+p {
+    color: rgb(206, 206, 206);
+}
+
+ul {
+    color: rgb(153, 153, 153);
+}
+
+ol {
+    color: rgb(209, 209, 209);
+}
