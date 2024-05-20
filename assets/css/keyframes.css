@@ -29,13 +29,21 @@
 }
 
 @keyframes height-inc {
-    from {height: 100px;}
-    to {height: 100vh;}
+    from {
+        height: 100px;
+    }
+    to {
+        height: 100vh;
+    }
 }
 
 @keyframes height-dec {
-    from {height: 100vh;}
-    to {height: 100px;}
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 100px;
+    }
 }
 
 .small-container {
@@ -50,13 +58,21 @@
 
 
 @keyframes font-size-inc {
-    from {font-size: 50px;}
-    to {font-size: 100px;}
+    from {
+        font-size: 50px;
+    }
+    to {
+        font-size: 100px;
+    }
 }
 
 @keyframes font-size-dec {
-    from {font-size: 100px;}
-    to {font-size: 50px;}
+    from {
+        font-size: 100px;
+    }
+    to {
+        font-size: 50px;
+    }
 }
 
 .big-title {

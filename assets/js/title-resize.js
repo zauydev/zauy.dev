@@ -18,14 +18,14 @@ function getScrollTop() {
 function checkScroll() {
     var scrollTop = getScrollTop();
 
-    if (scrollTop < 400) {
+    if (scrollTop < document.documentElement.clientHeight/2) {
         console.log('scrollTop');
         container.classList.add('big-container');
         container.classList.remove('small-container'); 
         text.classList.add('big-title');
         text.classList.remove('small-title');
     }
-    if  (scrollTop > 350) {
+    if  (scrollTop > document.documentElement.clientHeight/3) {
         container.classList.add('small-container');
         container.classList.remove('big-container');    
         text.classList.remove('big-title');

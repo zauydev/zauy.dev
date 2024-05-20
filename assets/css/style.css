@@ -29,12 +29,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100vw;
 }
 
 .title-section {
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
+    filter: drop-shadow(0px 0px 8px #181a1a);
 }
 
 #title-section {
@@ -42,7 +42,6 @@ body {
 }
 
 .title-text {
-
     position: relative;
     animation: fade-in 1.98s cubic-bezier(0.56, 0.44, 0.29, 1);
     transition: all .5s ease-in-out;
@@ -77,7 +76,6 @@ body {
     animation: bg-pan 3s linear infinite;
     background-size: 200%;
     font-weight: bold;
-
 }
 
 #scroll-triangle {
@@ -99,10 +97,15 @@ body {
 }
 
 #triangle-container {
-
     position: fixed;
     align-items: center;
     width: 100vw;
     height: 120px;
     bottom: 0;
+}
+
+.example-text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
