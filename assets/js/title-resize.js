@@ -23,23 +23,19 @@ function checkScroll() {
 
         container.classList.add('big-container');
         text.classList.add('big-title');
-
         container.classList.remove('small-container');
         text.classList.remove('small-title');
     }
     if (scrollTop > document.documentElement.clientHeight / 2.2) {
         container.classList.add('small-container');
         text.classList.add('small-title');
-
         container.classList.remove('big-container');
         text.classList.remove('big-title');
-
-
     }
 
     if (scrollable()) {
         triangle.style.opacity = 1;
-        triangle_container.style.height = '120px';
+        setTimeout(triangle_container.style.height = '120px', 500);
     } else {
         console.log('not top');
         triangle.style.opacity = 0;
