@@ -103,6 +103,7 @@ body {
 }
 
 #triangle-container {
+    z-index: 12;
     animation: fade-in .5s ease-in-out;
     position: fixed;
     align-items: center;
