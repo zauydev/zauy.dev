@@ -25,7 +25,8 @@ function checkScroll() {
         text.classList.add('big-title');
         container.classList.remove('small-container');
         text.classList.remove('small-title');
-    } else if (scrollTop > document.documentElement.clientHeight / 2.2) {
+    }
+    if (scrollTop > document.documentElement.clientHeight / 2.2) {
         container.classList.add('small-container');
         text.classList.add('small-title');
         container.classList.remove('big-container');
@@ -34,15 +35,13 @@ function checkScroll() {
 
     if (scrollable()) {
         triangle.style.opacity = 1;
-        setTimeout(function () {
-            triangle_container.style.height = '120px';
-        }, 500);
+        setTimeout(triangle_container.style.height = '120px'
+        , 500);
     } else {
         console.log('not top');
         triangle.style.opacity = 0;
-        setTimeout(function () {
-            triangle_container.style.height = '0px';
-        }, 500);
+        setTimeout(triangle_container.style.height = '0px'
+    , 500);
     }
 }
 
