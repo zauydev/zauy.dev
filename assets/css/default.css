@@ -27,6 +27,7 @@ link {
 .icon_small {
     height: 50px;
     width: 50px;
+    margin-right: 5px;
     margin-bottom: -10px;
 }
 
